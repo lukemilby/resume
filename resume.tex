@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{orange}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+%\usepackage[scale=0.75]{geometry}
+
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}
+%% Personal data
+\firstname{Luke}
+\familyname{Milby}
+\title{Security Automation Engineer} 
+\address{}{Austin TX} 
+\mobile{(309) 319-3442} 
+\email{luke.milby@gmail.com} 
+\homepage{linkedin.com/in/luke-milby} 
+%\extrainfo{additional information} 
+\photo[64pt][0.4pt]{pictures/picture}
+%\quote{Some quote (optional)}
+
+
+%%------------------------------------------------------------------------------
+%% Custom Commands
+%%------------------------------------------------------------------------------
+
+%% Formatting
+\newcommand\lword[1]{\leavevmode\nobreak\hskip0pt plus\linewidth\penalty50\hskip0pt plus-\linewidth\nobreak #1}
+%% Highlight and rounded corners
+\newcommand\bub[2][]{\lword{\tikz[overlay]\node[fill=blue!10,inner sep=1pt, anchor=text, rectangle, rounded corners=1mm,#1] {\ttfamily #2};\phantom{\ttfamily #2}}}
+
+
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\vspace*{-10mm}
+\section{Profile}
+%Experienced Security Analyst with a passion for software engineering. Aiming to merge the perspective of both realms into a solution that support both System Admins and Security Analyst.
+
+
+Senior Software Engineer with a background in Cyber Security. Passionate about creating and automating processes which reduce toil. Numerous open source contributions and personal projects including a enterprise grade homelab, honeypots, and an internal SIEM.
+
+
+
+%\begin{itemize}
+%        \setlength\itemsep{.25em}
+%    \item Solid understanding of Go and Python
+%    \item Experience with Docker, Kubernetes, JavaScript, Bash, LaTeX, Jenkins, and Ansible
+%    \item Strong professional communication skills, comfortable with internal and client-facing presentations
+%    %\item Firm working knowledge of various programming paradigms (OOP, test driven development, agile methodology)
+%    \item Experienced taking ownership of projects, working on tasks in a self directed manor
+%    %\item Experience instrumenting and profiling code bases to identify key areas of weakness within applications
+%    %\item ork experience with Git, code reviews, CI/CD tooling like Jenkins or Spinnaker
+%    \item Comfortable in a breadth of development environments
+%  \end{itemize}
+%}
+
+\section{Experience}
+% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{Dec 2021 - Present}
+{Senior Software Engineer}
+{SumoLogic}
+{Austin, TX/Remote}
+{}
+{Notable Achievements:
+    \begin{itemize}%
+        \setlength\itemsep{.25em}
+        \item Refactoring legacy code and improving our CI/CD pipeline
+        \item Architecting log and event collection agents for SIEM ingestion
+    \end{itemize}}
+
+\cventry{Sept 2017 - Aug 2021}
+{Senior Software Engineer}
+{Rapid7}
+{Austin, TX/Remote}
+{}
+{Notable Achievements:
+    \begin{itemize}%
+        \setlength\itemsep{.25em}
+        \item Built and maintained over 300+ REST API integrations for our enterprise SOAR solution
+        \item Performed scrum master and software architect responsibilities
+        \item Implemented CI/CD pipelines that delivered tooling to various package management services
+    \end{itemize}}
+
+\cventry{Oct 2013 - Sept 2017}
+{Security Analyst}
+{Country Financial}
+{Bloomington, IL}
+{}
+{Notable Achievements:
+\begin{itemize}
+        \setlength\itemsep{.25em}
+    \item Built out and managed an internal red team
+    \item Coordinated and executed penetration testing engagements 
+    \item Authored risk assessment profiles following NIST guidelines
+\end{itemize}}
+
+\cventry{Feb 2012 – Oct 2013}
+{Information Security Analyst}
+{Pearl Technology}
+{Peoria, IL}
+{}
+{Notable Achievements:
+\begin{itemize}
+        \setlength\itemsep{.25em}
+    \item Coordinated external network and web applications penetration tests
+    \item Recommended security focused architectural improvements
+    \item Used OSINT tools to perform security posture operations
+\end{itemize}}
+
+\section{Education}
+\cventry{2006--2010}{Bachelors of Science - Information System Security}{ITT Technical Institution}{Arnold MO}{}{}  % arguments 3 to 6 can be left empty
+
+\section{Technical Summary}
+\cvcomputer{Operating Systems}{\bub{Windows}, \bub{OSX}, \bub{Linux(Ubuntu/Centos/Redhat/Arch)}}
+    {Languages}{\bub{Go}, \bub{Python}, \bub{Bash}}
+
+\cvcomputer{Frameworks}{\bub{GoKit}, \bub{Goreleaser}, \bub{Cobra}, \bub{React}, \bub{Vue}}
+    {Devops Tooling}{\bub{Docker}, \bub{Kubernetes}, \bub{Spinnaker}, \bub{Jenkins}, \bub{Elasticsearch}, \bub{Ansible}}
+
+\cvcomputer{Databases}{\bub{Postgresql}, \bub{MongoDB}, \bub{BoltDB}, \bub{BadgerDB}}
+    {Collaboration}{\bub{Git}, \bub{Slack}, \bub{Miro}}
+
+\cvcomputer{Project Management}{\bub{Agile}, \bub{Scrum}, \bub{Sprint}, \bub{JIRA}}
+    {Security Tooling}{\bub{Nmap}, \bub{Metasploit}, \bub{Kali}, \bub{burp}}
+
+\cvcomputer{Security Frameworks \& Standards}{\bub{NIST 800-53}, \bub{OWASP Top 10}}
+    {Cloud}{\bub{S3}, \bub{IAM}, \bub{SQS},\bub{SNS},\bub{Amazon Cloud Security}, \bub{Aurora} \bub{EC2}}
+
+\end{document}
